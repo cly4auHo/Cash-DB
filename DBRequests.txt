@@ -1,0 +1,15 @@
+CREATE DATABASE itea; имя базы
+
+CREATE TABLE users (id INT, name VARCHAR(30), age INT, address VARCHAR(3)); таблица
+
+DESCRIBE users; показать таблицу
+
+INSERT INTO users (name, age, address) VALUES ("Alex",13,"Kiev") добавить элемент в таблицу
+
+SELECT * FROM users; выборка (без критерия)
+
+SELECT name, age FROM users WHERE age > 30; выборка с фильтрацией (не все таблицы + фильтрация if)
+
+SELECT name, age FROM users WHERE age > 30 AND id = 2; (&&)
+
+
