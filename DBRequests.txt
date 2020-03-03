@@ -1,14 +1,14 @@
-CREATE DATABASE itea; \u0438\u043c\u044f \u0431\u0430\u0437\u044b
+CREATE DATABASE itea; имя базы
 
-CREATE TABLE users (id INT, name VARCHAR(30), age INT, address VARCHAR(3)); òàáëèöà
+CREATE TABLE users (id INT, name VARCHAR(30), age INT, address VARCHAR(3)); создать таблицу
 
-DESCRIBE users; ïîêàçàòü òàáëèöó
+DESCRIBE users; показать таблицу
 
-INSERT INTO users (name, age, address) VALUES ("Alex",13,"Kiev") äîáàâèòü ýëåìåíò â òàáëèöó
+INSERT INTO users (name, age, address) VALUES ("Alex",13,"Kiev") добавить элемент в таблицу
 
-SELECT * FROM users; âûáîðêà (áåç êðèòåðèÿ)
+SELECT * FROM users; выборка без критерия
 
-SELECT name, age FROM users WHERE age > 30; âûáîðêà ñ ôèëüòðàöèåé (íå âñå òàáëèöû + ôèëüòðàöèÿ if)
+SELECT name, age FROM users WHERE age > 30; выборка с фильтрацией (не все таблицы + фильтрация if)
 
 SELECT name, age FROM users WHERE age > 30 AND id = 2; (&&)
 
