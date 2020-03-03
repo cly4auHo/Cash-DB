@@ -1,14 +1,14 @@
-CREATE DATABASE itea; èìÿ áàçû
+CREATE DATABASE itea; \u0438\u043c\u044f \u0431\u0430\u0437\u044b
 
-CREATE TABLE users (id INT, name VARCHAR(30), age INT, address VARCHAR(3)); òàáëèöà
+CREATE TABLE users (id INT, name VARCHAR(30), age INT, address VARCHAR(3)); Ã²Ã Ã¡Ã«Ã¨Ã¶Ã 
 
-DESCRIBE users; ïîêàçàòü òàáëèöó
+DESCRIBE users; Ã¯Ã®ÃªÃ Ã§Ã Ã²Ã¼ Ã²Ã Ã¡Ã«Ã¨Ã¶Ã³
 
-INSERT INTO users (name, age, address) VALUES ("Alex",13,"Kiev") äîáàâèòü ýëåìåíò â òàáëèöó
+INSERT INTO users (name, age, address) VALUES ("Alex",13,"Kiev") Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¢ Ã²Ã Ã¡Ã«Ã¨Ã¶Ã³
 
-SELECT * FROM users; âûáîðêà (áåç êðèòåðèÿ)
+SELECT * FROM users; Ã¢Ã»Ã¡Ã®Ã°ÃªÃ  (Ã¡Ã¥Ã§ ÃªÃ°Ã¨Ã²Ã¥Ã°Ã¨Ã¿)
 
-SELECT name, age FROM users WHERE age > 30; âûáîðêà ñ ôèëüòðàöèåé (íå âñå òàáëèöû + ôèëüòðàöèÿ if)
+SELECT name, age FROM users WHERE age > 30; Ã¢Ã»Ã¡Ã®Ã°ÃªÃ  Ã± Ã´Ã¨Ã«Ã¼Ã²Ã°Ã Ã¶Ã¨Ã¥Ã© (Ã­Ã¥ Ã¢Ã±Ã¥ Ã²Ã Ã¡Ã«Ã¨Ã¶Ã» + Ã´Ã¨Ã«Ã¼Ã²Ã°Ã Ã¶Ã¨Ã¿ if)
 
 SELECT name, age FROM users WHERE age > 30 AND id = 2; (&&)
 
